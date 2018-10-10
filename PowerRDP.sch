@@ -76,42 +76,6 @@ $EndComp
 Wire Wire Line
 	1200 800  1250 800 
 $Comp
-L RDP_Converter_DCDC:DPBW06F U1
-U 1 1 5B9C65C7
-P 3450 1400
-F 0 "U1" H 3450 1775 50  0000 C CNN
-F 1 "DPBW06F" H 3450 1684 50  0000 C CNN
-F 2 "RDP-Power:SIP-8_19x3mm_P2.54mm" H 3200 1650 50  0001 C CNN
-F 3 "" H 3200 1650 50  0001 C CNN
-	1    3450 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 1350 3100 1350
-Wire Wire Line
-	2900 1250 3100 1250
-Wire Wire Line
-	3800 1350 4000 1350
-Wire Wire Line
-	3800 1550 4000 1550
-$Comp
-L power:+BATT #PWR0102
-U 1 1 5B9C7BFF
-P 2900 1350
-F 0 "#PWR0102" H 2900 1200 50  0001 C CNN
-F 1 "+BATT" V 2915 1477 50  0000 L CNN
-F 2 "" H 2900 1350 50  0001 C CNN
-F 3 "" H 2900 1350 50  0001 C CNN
-	1    2900 1350
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 3100 1450
-Text Label 4000 1350 2    50   ~ 0
-+15V
-Text Label 4000 1550 2    50   ~ 0
--15V
-NoConn ~ 3800 1450
-$Comp
 L Regulator_Linear:KA378R12C U2
 U 1 1 5B9C99FB
 P 5350 1300
@@ -188,7 +152,7 @@ L Regulator_Linear:AZ1117-3.3 U3
 U 1 1 5B9CD404
 P 7300 1200
 F 0 "U3" H 7300 1442 50  0000 C CNN
-F 1 "AZ1117-3.3" H 7300 1351 50  0000 C CNN
+F 1 "AZ1117CH-3.3" H 7300 1351 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 7300 1450 50  0001 C CIN
 F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 7300 1200 50  0001 C CNN
 	1    7300 1200
@@ -341,17 +305,6 @@ Wire Wire Line
 Connection ~ 1250 2700
 Wire Wire Line
 	1250 2700 1300 2700
-$Comp
-L power:GND #PWR0103
-U 1 1 5B9D9D21
-P 2900 1250
-F 0 "#PWR0103" H 2900 1000 50  0001 C CNN
-F 1 "GND" H 2905 1077 50  0000 C CNN
-F 2 "" H 2900 1250 50  0001 C CNN
-F 3 "" H 2900 1250 50  0001 C CNN
-	1    2900 1250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1250 800  1250 600 
 Connection ~ 1250 800 
@@ -400,4 +353,25 @@ F 3 "" H 9550 1500 50  0001 C CNN
 	1    9550 1500
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Regulator_Switching:TMR_1-1223 U4
+U 1 1 5BBD6B92
+P 3350 1400
+F 0 "U4" H 3350 1867 50  0000 C CNN
+F 1 "TMR_1-1223" H 3350 1776 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Dual_THT" H 3350 1050 50  0001 C CNN
+F 3 "http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf" H 3350 900 50  0001 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1200 3850 1200
+Wire Wire Line
+	4050 1600 3850 1600
+Wire Wire Line
+	4050 1400 3850 1400
+Wire Wire Line
+	2650 1200 2850 1200
+Wire Wire Line
+	2650 1600 2850 1600
 $EndSCHEMATC
