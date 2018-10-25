@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name RDP-Power)(type KiCad)(uri /home/cory/kicad/projects/RDP-Power/rdplibs)(options "")(descr ""))
+  (lib (name rdplibs)(type KiCad)(uri ${KIPRJMOD}/rdplibs)(options "")(descr ""))
+  (lib (name PowerRDP)(type KiCad)(uri /home/cory/Documents/kicad/PowerRDP)(options "")(descr ""))
 )
