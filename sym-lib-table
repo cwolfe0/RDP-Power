@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Regulator_Switching)(type Legacy)(uri ${KIPRJMOD}/lib/Regulator_Switching.lib)(options "")(descr ""))
+  (lib (name PowerRDP-cache)(type Legacy)(uri ${KIPRJMOD}/PowerRDP-cache.lib)(options "")(descr ""))
+  (lib (name Converter_DCDC)(type Legacy)(uri ${KIPRJMOD}/lib/Converter_DCDC.lib)(options "")(descr ""))
+)

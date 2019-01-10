@@ -320,14 +320,14 @@ F 3 "~" H 1250 600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J9
+L Connector:Conn_01x05_Male J9
 U 1 1 5B9DC0D0
-P 9150 1600
-F 0 "J9" H 9256 1878 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 9256 1787 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 9150 1600 50  0001 C CNN
-F 3 "~" H 9150 1600 50  0001 C CNN
-	1    9150 1600
+P 9150 1700
+F 0 "J9" H 9150 2050 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 9150 1950 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 9150 1700 50  0001 C CNN
+F 3 "~" H 9150 1700 50  0001 C CNN
+	1    9150 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -352,11 +352,11 @@ F 3 "" H 9550 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Regulator_Switching:TMR_1-1223 U4
+L Regulator_Switching:MEA1 U4
 U 1 1 5BBD6B92
 P 2800 1350
 F 0 "U4" H 2800 1817 50  0000 C CNN
-F 1 "TMR_1-1223" H 2800 1726 50  0000 C CNN
+F 1 "MEA1D1515SC" H 2800 1726 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Dual_THT" H 2800 1000 50  0001 C CNN
 F 3 "http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf" H 2800 850 50  0001 C CNN
 	1    2800 1350
@@ -387,7 +387,7 @@ U 1 1 5BC6278F
 P 3650 1150
 F 0 "L1" V 3840 1150 50  0000 C CNN
 F 1 "47 uH" V 3749 1150 50  0000 C CNN
-F 2 "RDP-Power:Murata 8200" H 3650 1150 50  0001 C CNN
+F 2 "rdplibs:Murata 8200" H 3650 1150 50  0001 C CNN
 F 3 "~" H 3650 1150 50  0001 C CNN
 	1    3650 1150
 	0    -1   -1   0   
@@ -398,7 +398,7 @@ U 1 1 5BC628E7
 P 3650 1550
 F 0 "L2" V 3564 1550 50  0000 C CNN
 F 1 "47 uH" V 3473 1550 50  0000 C CNN
-F 2 "RDP-Power:Murata 8200" H 3650 1550 50  0001 C CNN
+F 2 "rdplibs:Murata 8200" H 3650 1550 50  0001 C CNN
 F 3 "~" H 3650 1550 50  0001 C CNN
 	1    3650 1550
 	0    -1   -1   0   
@@ -436,22 +436,9 @@ Wire Wire Line
 	3950 1550 4150 1550
 Connection ~ 3950 1550
 Text Label 4150 1150 0    50   ~ 0
-+15V
-Text Label 4150 1550 0    50   ~ 0
 -15V
-Text Label 2100 1150 0    50   ~ 0
-+BATT
-$Comp
-L power:GND #PWR0117
-U 1 1 5BC66B8E
-P 2100 1550
-F 0 "#PWR0117" H 2100 1300 50  0001 C CNN
-F 1 "GND" H 2105 1377 50  0000 C CNN
-F 2 "" H 2100 1550 50  0001 C CNN
-F 3 "" H 2100 1550 50  0001 C CNN
-	1    2100 1550
-	1    0    0    -1  
-$EndComp
+Text Label 4150 1550 0    50   ~ 0
++15V
 Wire Wire Line
 	4800 1200 4900 1200
 $Comp
@@ -591,6 +578,61 @@ F 1 "GND" H 3955 1677 50  0000 C CNN
 F 2 "" H 3950 1850 50  0001 C CNN
 F 3 "" H 3950 1850 50  0001 C CNN
 	1    3950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5C38679E
+P 2100 1150
+F 0 "#PWR0117" H 2100 900 50  0001 C CNN
+F 1 "GND" H 2105 977 50  0000 C CNN
+F 2 "" H 2100 1150 50  0001 C CNN
+F 3 "" H 2100 1150 50  0001 C CNN
+	1    2100 1150
+	-1   0    0    1   
+$EndComp
+Text Label 2100 1550 0    50   ~ 0
++BATT
+Wire Wire Line
+	9350 1800 9550 1800
+Wire Wire Line
+	9350 1900 9550 1900
+Text Label 9550 1800 2    50   ~ 0
+C_in
+Text Label 9550 1900 2    50   ~ 0
+C_out
+$Comp
+L Device:R_POT RV1
+U 1 1 5C38925B
+P 8600 2250
+F 0 "RV1" V 8393 2250 50  0000 C CNN
+F 1 "R_POT" V 8484 2250 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical" H 8600 2250 50  0001 C CNN
+F 3 "~" H 8600 2250 50  0001 C CNN
+	1    8600 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 2250 8750 2250
+Text Label 8900 2250 2    50   ~ 0
+C_in
+Text Label 8650 2600 0    50   ~ 0
+C_out
+Wire Wire Line
+	8150 2250 8450 2250
+Wire Wire Line
+	8600 2400 8600 2600
+Wire Wire Line
+	8600 2600 8650 2600
+$Comp
+L power:GND #PWR0122
+U 1 1 5C38E9B8
+P 8150 2250
+F 0 "#PWR0122" H 8150 2000 50  0001 C CNN
+F 1 "GND" H 8155 2077 50  0000 C CNN
+F 2 "" H 8150 2250 50  0001 C CNN
+F 3 "" H 8150 2250 50  0001 C CNN
+	1    8150 2250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

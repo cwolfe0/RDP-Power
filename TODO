@@ -1,3 +1,0 @@
-Add connection from Socket to board that allows for potentiometer to vary 0-6V.
-Fix +/-15V regulator pins.
-New regulator is part: MEA1D1515SC
