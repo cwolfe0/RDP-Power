@@ -4789,7 +4789,7 @@
     (arrow2a (pts (xy 120.65 39.37) (xy 121.776504 39.956421)))
     (arrow2b (pts (xy 120.65 39.37) (xy 121.776504 38.783579)))
   )
-  (gr_text "HELEN RDP Power Board Rev01" (at 137.16 71.12 90) (layer F.SilkS) (tstamp 5BF46F5B)
+  (gr_text "HELEN RDP Power Board Rev02" (at 140.97 69.85) (layer F.SilkS) (tstamp 5BF46F5B)
     (effects (font (size 0.8 0.8) (thickness 0.2)))
   )
   (gr_text "+12V\n" (at 147.955 67.945) (layer F.SilkS) (tstamp 5BF46F18)
