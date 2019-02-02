@@ -3780,12 +3780,6 @@ K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1SM/documents/tmr1sm-datasheet.pdf
 $ENDCMP
 #
-$CMP TMR_1-0523
-D +/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-15V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
-$ENDCMP
-#
 $CMP TMR_1-0523SM
 D +/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-15V fixed Output Voltage, SMD
 K Murata isolated isolation dc-dc converter transformer
@@ -3830,12 +3824,6 @@ $ENDCMP
 #
 $CMP TMR_1-1215
 D 42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, 24V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
-$ENDCMP
-#
-$CMP TMR_1-1222
-D +/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, +/-12V fixed Output Voltage, SIP-6
 K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
 $ENDCMP
@@ -3900,22 +3888,10 @@ K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
 $ENDCMP
 #
-$CMP TMR_1-2422
-D +/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-12V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
-$ENDCMP
-#
 $CMP TMR_1-2422SM
 D +/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-12V fixed Output Voltage, SMD
 K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1SM/documents/tmr1sm-datasheet.pdf
-$ENDCMP
-#
-$CMP TMR_1-2423
-D +/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-15V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
 $ENDCMP
 #
 $CMP TMR_1-2423SM
@@ -3966,22 +3942,10 @@ K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
 $ENDCMP
 #
-$CMP TMR_1-4822
-D +/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-12V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
-$ENDCMP
-#
 $CMP TMR_1-4822SM
 D +/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-12V fixed Output Voltage, SMD
 K Murata isolated isolation dc-dc converter transformer
 F http://assets.tracopower.com/TMR1SM/documents/tmr1sm-datasheet.pdf
-$ENDCMP
-#
-$CMP TMR_1-4823
-D +/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-15V fixed Output Voltage, SIP-6
-K Murata isolated isolation dc-dc converter transformer
-F http://assets.tracopower.com/TMR1/documents/tmr1-datasheet.pdf
 $ENDCMP
 #
 $CMP TMR_1-4823SM
