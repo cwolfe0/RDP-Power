@@ -1140,7 +1140,7 @@ ADC1
 Text Label 1000 4050 0    50   ~ 0
 ADC2
 $Comp
-L Amplifier_Operational:MCP602 U6
+L Amplifier_Operational:LM741 U6
 U 1 1 5C5B0CBD
 P 3000 3300
 F 0 "U6" H 3000 3667 50  0000 C CNN
@@ -1151,11 +1151,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3000 3300 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP602 U7
+L Amplifier_Operational:LM741 U7
 U 1 1 5C5B1155
 P 3900 3200
-F 0 "U7" H 3900 3567 50  0000 C CNN
-F 1 "MCP602" H 3900 3476 50  0000 C CNN
+F 0 "U7" H 4241 3246 50  0000 L CNN
+F 1 "MCP602" H 4241 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3900 3200 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3900 3200 50  0001 C CNN
 	1    3900 3200
@@ -1178,7 +1178,7 @@ U 1 1 5C5B1902
 P 2350 3400
 F 0 "R3" V 2145 3400 50  0000 C CNN
 F 1 "1k" V 2236 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2350 3400 50  0001 C CNN
 F 3 "~" H 2350 3400 50  0001 C CNN
 	1    2350 3400
 	0    1    1    0   
@@ -1298,4 +1298,34 @@ Wire Wire Line
 	9800 2550 10000 2550
 Text Label 10000 2550 0    50   ~ 0
 +12V
+Wire Wire Line
+	2900 3000 2900 2900
+Wire Wire Line
+	3800 2750 3800 2900
+Text Label 2900 2900 0    50   ~ 0
++3.3V
+Text Label 3800 2750 0    50   ~ 0
++3.3V
+$Comp
+L power:GND #PWR?
+U 1 1 5C712204
+P 2900 3600
+F 0 "#PWR?" H 2900 3350 50  0001 C CNN
+F 1 "GND" V 2905 3472 50  0000 R CNN
+F 2 "" H 2900 3600 50  0001 C CNN
+F 3 "" H 2900 3600 50  0001 C CNN
+	1    2900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7122EE
+P 3800 3500
+F 0 "#PWR?" H 3800 3250 50  0001 C CNN
+F 1 "GND" V 3805 3372 50  0000 R CNN
+F 2 "" H 3800 3500 50  0001 C CNN
+F 3 "" H 3800 3500 50  0001 C CNN
+	1    3800 3500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
